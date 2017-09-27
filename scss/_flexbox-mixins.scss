@@ -1,0 +1,21 @@
+@import "flexbox-variables";
+
+@mixin flex-responsive($bp) {
+  @if $bp != xs {
+    .flex-#{$bp}-wrap           { flex-wrap: wrap !important; }
+    .flex-#{$bp}-nowrap         { flex-wrap: nowrap !important; }
+    .flex-#{$bp}-wrap-reverse   { flex-wrap: wrap-reverse !important; }
+    .flex-#{$bp}-row            { flex-direction: row !important; }
+    .flex-#{$bp}-row-reverse    { flex-direction: row-reverse !important; }
+    .flex-#{$bp}-column-reverse { flex-direction: column-reverse !important; }
+    .flex-#{$bp}-column         { flex-direction: column !important; }
+    .flex-#{$bp}-first          { order: -1 !important; }
+    .flex-#{$bp}-last           { order: 10 !important; }
+
+    @each $property,$rule in $flex {
+      @each $suffix,$value in $rule {
+        .#{$property}-#{$bp}-#{$suffix} { #{$property}: $value !important; }
+      }
+    }
+  }
+}
