@@ -2,11 +2,11 @@
 
 $enable-framework: false !default;
 
-@if $enable-framework == false {
+@if not($enable-framework) {
 /*!
- * Strapless v1.6.1 Flex (http://github.com/strapless/strapless)
+ * Strapless FlexBox v1.0 (http://github.com/strapless/flexbox)
  * Influenced by Bootstrap v4.0 (http://getbootstrap.com)
- * Licensed under MIT (https://github.com/strapless/strapless/blob/master/LICENSE)
+ * Licensed under MIT (https://github.com/strapless/flexbox/blob/master/LICENSE)
  */
 }
 
@@ -20,10 +20,13 @@ $enable-framework: false !default;
 .flex-shrink         { flex-shrink: 1 !important; }
 .flex-grow           { flex-grow: 1 !important; }
 
-.d-flex {
-  > * {
-    flex: 0 0 auto;
+@if not($enable-framework) {
+  .d-flex {
+    display: flex;
+    > * { flex: 0 0 auto; }
   }
+} @else {
+  .d-flex > * { flex: 0 0 auto; }
 }
 
 @each $property,$rule in $flex {

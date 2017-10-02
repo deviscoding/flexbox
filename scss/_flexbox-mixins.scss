@@ -2,6 +2,14 @@
 
 @mixin flex-responsive($bp) {
   @if $bp != xs {
+    @if not($enable-framework) {
+      .d-#{$bp}-flex {
+        display: flex !important;
+        > * {
+          flex: 0 0 auto;
+        }
+      }
+    }
     .flex-#{$bp}-wrap           { flex-wrap: wrap !important; }
     .flex-#{$bp}-nowrap         { flex-wrap: nowrap !important; }
     .flex-#{$bp}-wrap-reverse   { flex-wrap: wrap-reverse !important; }
