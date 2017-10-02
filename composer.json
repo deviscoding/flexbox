@@ -1,0 +1,21 @@
+{
+  "name": "strapless/flexbox",
+  "description": "CSS Utility classes for easily utilizing flexbox.  Inspired by Bootstrap 4, but usable as a standalone component.",
+  "keywords": [
+      "responsive",
+      "flexbox",
+      "sass",
+      "scss",
+      "strapless",
+      "css"
+  ],
+  "homepage": "https://www.github.com/strapless/flexbox",
+  "version": "1.0",
+  "authors": [
+      {
+          "name": "Aaron M Jones",
+          "homepage": "http://www.jonesiscoding.com"
+      }
+  ],
+  "license": "MIT"
+}
