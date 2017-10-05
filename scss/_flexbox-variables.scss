@@ -1,13 +1,6 @@
-$enable-framework: false !default;
+@import "strapless/base/scss/base";
 
-// Note: This variable should be moved to a base variables file, as it is utilized in a number of mixins.
-$grid-breakpoints: (
-   xs: 0,
-   sm: 576px,
-   md: 768px,
-   lg: 992px,
-   xl: 1200px
-                    ) !default;
+$enable-framework: false !default;
 
 // region //////////////////////////////////////////////// Utility Variable - DO NOT OVERRIDE
 

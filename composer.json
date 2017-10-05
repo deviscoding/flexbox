@@ -17,5 +17,8 @@
           "homepage": "http://www.jonesiscoding.com"
       }
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "require": {
+    "strapless/base": "^1.0"
+  }
 }
