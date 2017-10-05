@@ -17,16 +17,23 @@ $enable-framework: false !default;
 .flex-row-reverse    { flex-direction: row-reverse !important; }
 .flex-column-reverse { flex-direction: column-reverse !important; }
 .flex-column         { flex-direction: column !important; }
+.flex-first          { order: -1 !important; }
+.flex-last           { order: 10 !important; }
 .flex-shrink         { flex-shrink: 1 !important; }
 .flex-grow           { flex-grow: 1 !important; }
+.flex-reset          {
+  flex-grow: 0 !important;
+  flex-shrink: 1 !important;
+}
 
 @if not($enable-framework) {
   .d-flex {
     display: flex;
-    > * { flex: 0 0 auto; }
+
+    > * { flex: 0 1 auto; }
   }
 } @else {
-  .d-flex > * { flex: 0 0 auto; }
+  .d-flex > * { flex: 0 1 auto; }
 }
 
 @each $property,$rule in $flex {
