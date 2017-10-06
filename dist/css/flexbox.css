@@ -1,10 +1,12 @@
 /*!
- * Strapless FlexBox v1.0 (http://github.com/strapless/flexbox)
+ * Strapless FlexBox v1.0.3 (http://github.com/strapless/flexbox)
  * Influenced by Bootstrap v4.0 (http://getbootstrap.com)
  * Licensed under MIT (https://github.com/strapless/flexbox/blob/master/LICENSE)
  */
 .flex-wrap {
-  flex-wrap: wrap !important;
+  -webkit-flex-wrap: wrap  !important;
+  -ms-flex-wrap: wrap  !important;
+  flex-wrap: wrap  !important;
 }
 
 .flex-nowrap {
@@ -68,9 +70,7 @@
 }
 
 .flex-reset {
-  -webkit-flex-grow: 0  !important;
-  -ms-flex-positive: 0  !important;
-  flex-grow: 0  !important;
+  flex-grow: 0 !important;
   -webkit-flex-shrink: 1  !important;
   -ms-flex-negative: 1  !important;
   flex-shrink: 1  !important;
@@ -119,27 +119,39 @@
 }
 
 .align-content-start {
-  align-content: flex-start !important;
+  -webkit-align-content: flex-start  !important;
+  -ms-flex-line-pack: start  !important;
+  align-content: flex-start  !important;
 }
 
 .align-content-end {
-  align-content: flex-end !important;
+  -webkit-align-content: flex-end  !important;
+  -ms-flex-line-pack: end  !important;
+  align-content: flex-end  !important;
 }
 
 .align-content-center {
-  align-content: center !important;
+  -webkit-align-content: center  !important;
+  -ms-flex-line-pack: center  !important;
+  align-content: center  !important;
 }
 
 .align-content-around {
-  align-content: space-around !important;
+  -webkit-align-content: space-around  !important;
+  -ms-flex-line-pack: distribute  !important;
+  align-content: space-around  !important;
 }
 
 .align-content-between {
-  align-content: space-between !important;
+  -webkit-align-content: space-between  !important;
+  -ms-flex-line-pack: justify  !important;
+  align-content: space-between  !important;
 }
 
 .align-content-stretch {
-  align-content: stretch !important;
+  -webkit-align-content: stretch  !important;
+  -ms-flex-line-pack: stretch  !important;
+  align-content: stretch  !important;
 }
 
 .align-items-start {
@@ -213,7 +225,9 @@
 
 @media screen and (min-width: 576px) {
   .d-sm-flex {
-    display: flex !important;
+    display: -webkit-flex  !important;
+    display: -ms-flexbox  !important;
+    display: flex  !important;
   }
   .d-sm-flex > * {
     -webkit-flex: 0 1 auto;
@@ -275,10 +289,8 @@
     -ms-flex-positive: 1  !important;
     flex-grow: 1  !important;
   }
-  .flex-reset {
-    -webkit-flex-grow: 0  !important;
-    -ms-flex-positive: 0  !important;
-    flex-grow: 0  !important;
+  .flex-sm-reset {
+    flex-grow: 0 !important;
     -webkit-flex-shrink: 1  !important;
     -ms-flex-negative: 1  !important;
     flex-shrink: 1  !important;
@@ -309,22 +321,34 @@
     justify-content: space-between  !important;
   }
   .align-content-sm-start {
-    align-content: flex-start !important;
+    -webkit-align-content: flex-start  !important;
+    -ms-flex-line-pack: start  !important;
+    align-content: flex-start  !important;
   }
   .align-content-sm-end {
-    align-content: flex-end !important;
+    -webkit-align-content: flex-end  !important;
+    -ms-flex-line-pack: end  !important;
+    align-content: flex-end  !important;
   }
   .align-content-sm-center {
-    align-content: center !important;
+    -webkit-align-content: center  !important;
+    -ms-flex-line-pack: center  !important;
+    align-content: center  !important;
   }
   .align-content-sm-around {
-    align-content: space-around !important;
+    -webkit-align-content: space-around  !important;
+    -ms-flex-line-pack: distribute  !important;
+    align-content: space-around  !important;
   }
   .align-content-sm-between {
-    align-content: space-between !important;
+    -webkit-align-content: space-between  !important;
+    -ms-flex-line-pack: justify  !important;
+    align-content: space-between  !important;
   }
   .align-content-sm-stretch {
-    align-content: stretch !important;
+    -webkit-align-content: stretch  !important;
+    -ms-flex-line-pack: stretch  !important;
+    align-content: stretch  !important;
   }
   .align-items-sm-start {
     -ms-flex-align: start  !important;
@@ -388,7 +412,9 @@
 
 @media screen and (min-width: 768px) {
   .d-md-flex {
-    display: flex !important;
+    display: -webkit-flex  !important;
+    display: -ms-flexbox  !important;
+    display: flex  !important;
   }
   .d-md-flex > * {
     -webkit-flex: 0 1 auto;
@@ -450,10 +476,8 @@
     -ms-flex-positive: 1  !important;
     flex-grow: 1  !important;
   }
-  .flex-reset {
-    -webkit-flex-grow: 0  !important;
-    -ms-flex-positive: 0  !important;
-    flex-grow: 0  !important;
+  .flex-md-reset {
+    flex-grow: 0 !important;
     -webkit-flex-shrink: 1  !important;
     -ms-flex-negative: 1  !important;
     flex-shrink: 1  !important;
@@ -484,22 +508,34 @@
     justify-content: space-between  !important;
   }
   .align-content-md-start {
-    align-content: flex-start !important;
+    -webkit-align-content: flex-start  !important;
+    -ms-flex-line-pack: start  !important;
+    align-content: flex-start  !important;
   }
   .align-content-md-end {
-    align-content: flex-end !important;
+    -webkit-align-content: flex-end  !important;
+    -ms-flex-line-pack: end  !important;
+    align-content: flex-end  !important;
   }
   .align-content-md-center {
-    align-content: center !important;
+    -webkit-align-content: center  !important;
+    -ms-flex-line-pack: center  !important;
+    align-content: center  !important;
   }
   .align-content-md-around {
-    align-content: space-around !important;
+    -webkit-align-content: space-around  !important;
+    -ms-flex-line-pack: distribute  !important;
+    align-content: space-around  !important;
   }
   .align-content-md-between {
-    align-content: space-between !important;
+    -webkit-align-content: space-between  !important;
+    -ms-flex-line-pack: justify  !important;
+    align-content: space-between  !important;
   }
   .align-content-md-stretch {
-    align-content: stretch !important;
+    -webkit-align-content: stretch  !important;
+    -ms-flex-line-pack: stretch  !important;
+    align-content: stretch  !important;
   }
   .align-items-md-start {
     -ms-flex-align: start  !important;
@@ -563,7 +599,9 @@
 
 @media screen and (min-width: 992px) {
   .d-lg-flex {
-    display: flex !important;
+    display: -webkit-flex  !important;
+    display: -ms-flexbox  !important;
+    display: flex  !important;
   }
   .d-lg-flex > * {
     -webkit-flex: 0 1 auto;
@@ -625,10 +663,8 @@
     -ms-flex-positive: 1  !important;
     flex-grow: 1  !important;
   }
-  .flex-reset {
-    -webkit-flex-grow: 0  !important;
-    -ms-flex-positive: 0  !important;
-    flex-grow: 0  !important;
+  .flex-lg-reset {
+    flex-grow: 0 !important;
     -webkit-flex-shrink: 1  !important;
     -ms-flex-negative: 1  !important;
     flex-shrink: 1  !important;
@@ -659,22 +695,34 @@
     justify-content: space-between  !important;
   }
   .align-content-lg-start {
-    align-content: flex-start !important;
+    -webkit-align-content: flex-start  !important;
+    -ms-flex-line-pack: start  !important;
+    align-content: flex-start  !important;
   }
   .align-content-lg-end {
-    align-content: flex-end !important;
+    -webkit-align-content: flex-end  !important;
+    -ms-flex-line-pack: end  !important;
+    align-content: flex-end  !important;
   }
   .align-content-lg-center {
-    align-content: center !important;
+    -webkit-align-content: center  !important;
+    -ms-flex-line-pack: center  !important;
+    align-content: center  !important;
   }
   .align-content-lg-around {
-    align-content: space-around !important;
+    -webkit-align-content: space-around  !important;
+    -ms-flex-line-pack: distribute  !important;
+    align-content: space-around  !important;
   }
   .align-content-lg-between {
-    align-content: space-between !important;
+    -webkit-align-content: space-between  !important;
+    -ms-flex-line-pack: justify  !important;
+    align-content: space-between  !important;
   }
   .align-content-lg-stretch {
-    align-content: stretch !important;
+    -webkit-align-content: stretch  !important;
+    -ms-flex-line-pack: stretch  !important;
+    align-content: stretch  !important;
   }
   .align-items-lg-start {
     -ms-flex-align: start  !important;
@@ -738,7 +786,9 @@
 
 @media screen and (min-width: 1200px) {
   .d-xl-flex {
-    display: flex !important;
+    display: -webkit-flex  !important;
+    display: -ms-flexbox  !important;
+    display: flex  !important;
   }
   .d-xl-flex > * {
     -webkit-flex: 0 1 auto;
@@ -800,10 +850,8 @@
     -ms-flex-positive: 1  !important;
     flex-grow: 1  !important;
   }
-  .flex-reset {
-    -webkit-flex-grow: 0  !important;
-    -ms-flex-positive: 0  !important;
-    flex-grow: 0  !important;
+  .flex-xl-reset {
+    flex-grow: 0 !important;
     -webkit-flex-shrink: 1  !important;
     -ms-flex-negative: 1  !important;
     flex-shrink: 1  !important;
@@ -834,22 +882,34 @@
     justify-content: space-between  !important;
   }
   .align-content-xl-start {
-    align-content: flex-start !important;
+    -webkit-align-content: flex-start  !important;
+    -ms-flex-line-pack: start  !important;
+    align-content: flex-start  !important;
   }
   .align-content-xl-end {
-    align-content: flex-end !important;
+    -webkit-align-content: flex-end  !important;
+    -ms-flex-line-pack: end  !important;
+    align-content: flex-end  !important;
   }
   .align-content-xl-center {
-    align-content: center !important;
+    -webkit-align-content: center  !important;
+    -ms-flex-line-pack: center  !important;
+    align-content: center  !important;
   }
   .align-content-xl-around {
-    align-content: space-around !important;
+    -webkit-align-content: space-around  !important;
+    -ms-flex-line-pack: distribute  !important;
+    align-content: space-around  !important;
   }
   .align-content-xl-between {
-    align-content: space-between !important;
+    -webkit-align-content: space-between  !important;
+    -ms-flex-line-pack: justify  !important;
+    align-content: space-between  !important;
   }
   .align-content-xl-stretch {
-    align-content: stretch !important;
+    -webkit-align-content: stretch  !important;
+    -ms-flex-line-pack: stretch  !important;
+    align-content: stretch  !important;
   }
   .align-items-xl-start {
     -ms-flex-align: start  !important;
