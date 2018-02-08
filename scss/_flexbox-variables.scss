@@ -1,16 +1,16 @@
-@import "strapless/base/scss/base";
+@import "../vendor/strapless/base/scss/base";
 
-$enable-framework: false !default;
+$enable-framework:  false !default;
+$flex-gutter-width: if(variable-exists(grid-gutter-width), $grid-gutter-width, 30px) !default;
 
 // region //////////////////////////////////////////////// Utility Variable - DO NOT OVERRIDE
 
 $flex: (
-   justify-content: (start: flex-start, end: flex-end, center: center, around: space-around, between: space-between),
-   align-content:   (start: flex-start, end: flex-end, center: center, around: space-around, between: space-between, stretch: stretch),
-   align-items:     (start: flex-start, end: flex-end, center: center, baseline: baseline, stretch: stretch),
-   align-self:      (auto: auto, start: flex-start, end: flex-end, center: center, baseline: baseline, stretch: stretch)
-       );
-
+  justify-content: (start: flex-start, end: flex-end, center: center, around: space-around, between: space-between),
+  align-content:   (start: flex-start, end: flex-end, center: center, around: space-around, between: space-between, stretch: stretch),
+  align-items:     (start: flex-start, end: flex-end, center: center, baseline: baseline, stretch: stretch),
+  align-self:      (auto: auto, start: flex-start, end: flex-end, center: center, baseline: baseline, stretch: stretch)
+);
 
 // endregion ///////////////////////////////////////////// End Utility Variable
 

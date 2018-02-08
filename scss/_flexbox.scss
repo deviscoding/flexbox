@@ -1,10 +1,11 @@
+@import "flexbox-variables";
 @import "flexbox-mixins";
 
 $enable-framework: false !default;
 
 @if not($enable-framework) {
 /*!
- * Strapless FlexBox v1.0.4 (http://github.com/strapless/flexbox)
+ * Strapless FlexBox v1.1 (http://github.com/strapless/flexbox)
  * Influenced by Bootstrap v4.0 (http://getbootstrap.com)
  * Licensed under MIT (https://github.com/strapless/flexbox/blob/master/LICENSE)
  */
@@ -19,11 +20,21 @@ $enable-framework: false !default;
 .flex-column         { flex-direction: column !important; }
 .flex-first          { order: -1 !important; }
 .flex-last           { order: 10 !important; }
+.flex-fill           { flex: 1 1 auto !important; }
+.flex-auto           { flex: 0 0 auto !important; min-width: 0 !important; }
 .flex-shrink         { flex-shrink: 1 !important; }
 .flex-grow           { flex-grow: 1 !important; }
-.flex-reset          {
-  flex-grow: 0 !important;
-  flex-shrink: 1 !important;
+.flex-noshrink       { flex-shrink: 0 !important; }
+.flex-nogrow         { flex-grow: 0 !important; }
+
+// Spaced Grid
+.flex-grid {
+  margin-left: -($flex-gutter-width / 2);
+  margin-right: -($flex-gutter-width / 2);
+  > .d-flex, > .card {
+    margin-left: $flex-gutter-width / 2;
+    margin-right: $flex-gutter-width / 2;
+  }
 }
 
 @if not($enable-framework) {

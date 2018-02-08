@@ -19,12 +19,12 @@
     .flex-#{$bp}-column         { flex-direction: column !important; }
     .flex-#{$bp}-first          { order: -1 !important; }
     .flex-#{$bp}-last           { order: 10 !important; }
+    .flex-#{$bp}-fill           { flex: 1 1 auto !important; }
+    .flex-#{$bp}-auto           { flex: 0 0 auto !important; min-width: 0 !important; }
     .flex-#{$bp}-shrink         { flex-shrink: 1 !important; }
+    .flex-#{$bp}-noshrink       { flex-shrink: 0 !important; }
     .flex-#{$bp}-grow           { flex-grow: 1 !important; }
-    .flex-#{$bp}-reset          {
-      flex-grow: 0 !important;
-      flex-shrink: 1 !important;
-    }
+    .flex-#{$bp}-nogrow         { flex-grow: 0 !important; }
 
     @each $property,$rule in $flex {
       @each $suffix,$value in $rule {
