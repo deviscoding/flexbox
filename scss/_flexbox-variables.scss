@@ -1,4 +1,4 @@
-@import "../vendor/strapless/base/scss/base";
+@import "../vendor/deviscoding/base/scss/base";
 
 $enable-framework:  false !default;
 $flex-gutter-width: if(variable-exists(grid-gutter-width), $grid-gutter-width, 30px) !default;
