@@ -10,7 +10,7 @@
       "css"
   ],
   "homepage": "https://www.github.com/deviscoding/flexbox",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "authors": [
       {
           "name": "Aaron M Jones",
@@ -22,6 +22,7 @@
     "strapless/flexbox": "^1.0"
   },
   "require": {
-    "deviscoding/base": "^1.0"
+    "deviscoding/base": "^2.0",
+    "deviscoding/responsive": "^1.0"
   }
 }
